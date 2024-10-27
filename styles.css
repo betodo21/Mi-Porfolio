@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo para el encabezado y la imagen de perfil */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    border: 5px solid rgb(38, 23, 80); /* Línea circunferencial negra */
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #141148;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+/* Estilo para la biografía */
+section p {
+    max-width: 600px;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px; /* Asegúrate de que el tamaño coincida con el de las imágenes */
+    transition: transform 0.3s; /* Efecto de transición */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+/* Estilos para los botones en el pie de página */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+footer button {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 2px solid #1d3557;
+    background: none;
+    color: #1d3557;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+footer button:hover {
+    background: #1d3557;
+    color: white;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
